@@ -83,6 +83,52 @@
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
+
+
+/* seller-info */
+.seller{
+    margin-top: 7rem;
+}
+.seller-info > .flex{
+    gap: 80px;
+}
+
+.seller-images{
+    position: relative;  
+}
+
+
+.trusted-badge{
+    position: absolute;
+    top: -80px;
+    left: 100%;
+    transform: translateX(-60%);
+    width: 40%;
+}
+.flower-store{
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+.seller-details{
+    flex: 1;
+    align-self: center;
+}
+.seller-details h3{
+    font-size: 3rem;
+    
+}
+.seller-details ul{
+    font-size: 1.2rem;
+    
+}
+.seller-details ul li{
+    margin-top : 1.2rem;
+    
+}
+
+/* Latest Deals */
+
 /* Utilities */
 .container{
     max-width: 1200px;
