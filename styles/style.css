@@ -49,7 +49,39 @@
     font-size: 60px;
 }
 .banner p{
+    margin-top: 10px;
     font-size: 22px;
+}
+
+/* Our Plants */
+.plants > .grid{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+
+}
+.our-plants h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.our-plants p{
+    padding: 0 6rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.plant-card{
+    overflow: hidden;
+}
+.card p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+.card h6{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 /* Utilities */
 .container{
@@ -57,6 +89,13 @@
     margin: 0 auto;
     padding: 0 80px;
     overflow: auto;
+}
+.text-center{
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: auto;
 }
 .flex{
     display: flex;
@@ -67,6 +106,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
+}
+.btn-primary{
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    color: white;
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
+:root{
+    --primary-color : #E95A08;
 }
 
 
