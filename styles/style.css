@@ -94,7 +94,7 @@
     margin-top: 7rem;
 }
 .seller-info > .flex{
-    gap: 80px;
+    gap: 5rem;
 }
 
 .seller-images{
@@ -132,17 +132,13 @@
     
 }
 
-/* Latest Deals */
-/* .deals > .grid{
-    
-}  */
+
  .deal-imgs{
     display: grid;
     gap: 25px;
-    /* overflow: hidden; */
     grid-template-areas: 
     "bloom zabo zabo"
-    "ana zabo zabo"
+    "ana   zabo zabo"
     ;
  }
  .bloom{
@@ -188,11 +184,8 @@
     width: 100%;
  }
  .zabo img{
-    /* background: rgba(0, 0, 0, 0.4); */
     display: block;
-    /* z-index: -5; */
     border-radius: 24px;
-    /* height: 100%; */
     width: 100%;
  }
  .deals-text{
@@ -237,7 +230,7 @@
  /* contacts */
  .contacts{
     background: url(../assets/news-letter-bg.png);
-     background-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 6rem;
@@ -358,7 +351,7 @@ footer > .flex{
 /* mobile */
 @media (max-width : 576px) {
     .navbar{
-        padding: 10px 15px;
+        padding: 10px 1rem;
     }
     .navbar ul{
         display: none;
@@ -370,7 +363,6 @@ footer > .flex{
         margin :20px 0;
     }
     .banner > img{
-        
         height: 100%;
         width: 100%;
         grid-area: first;
@@ -391,14 +383,13 @@ footer > .flex{
     font-size: 3rem;
     }
     .banner p{
-        margin-top: 10px;
+        
         font-size: 1rem;
     }
 /* our plants */
     .plants > .grid{
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    row-gap: 30px;
+    
 
     }   
     .our-plants p{
@@ -428,7 +419,7 @@ footer > .flex{
         margin-top: 1rem;
     }
     .seller-details h3{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     
 }
     .seller-details ul{
@@ -441,13 +432,10 @@ footer > .flex{
     
     }
      .deal-imgs{
-    display: grid;
-    gap: 25px;
-    /* overflow: hidden; */
     grid-template-areas: 
     "bloom"
-    "zabo"
     "ana"
+    "zabo"
     ;
     }
     .deals{
@@ -459,23 +447,18 @@ footer > .flex{
     .zabo .discount a{
     font-size: 1rem;
     }
-     .deals-text{
-    margin-top: 6.5rem;
-    }
     .deals-text h3{
-    font-size: 3rem;
+    /* font-size: 3rem; */
     margin-bottom: 1rem;
     }
     .deals-text p{
-    font-size: 1.3rem;
     margin-bottom: 5rem;
     padding: 0 1.5rem;
     }
     .contacts{
         margin-top: 2.75rem;
-         padding: 7rem 2.2rem;
-        /* width: 100%; */
-        background-size:cover;
+        padding: 7rem 2.2rem;    
+        background-size: cover;
     }
     
     .contact-mail{
@@ -546,8 +529,6 @@ footer > .flex{
 /* our plants */
     .plants > .grid{
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    row-gap: 30px;
 
     }   
     .our-plants p{
@@ -576,10 +557,7 @@ footer > .flex{
     .seller{
         margin-top: 1rem;
     }
-    .seller-details h3{
-    font-size: 2.5rem;
-    
-}
+   
     .seller-details ul{
     font-size: 1rem;
     margin-left: 2rem;
@@ -589,14 +567,13 @@ footer > .flex{
     margin-top : 1.2rem;
     
     }
-     .deal-imgs{
+    .deal-imgs{
     display: grid;
     gap: 25px;
-    /* overflow: hidden; */
     grid-template-areas: 
     "bloom"
-    "zabo"
     "ana"
+    "zabo"
     ;
     }
     .deals{
@@ -611,19 +588,13 @@ footer > .flex{
      .deals-text{
     margin-top: 6.5rem;
     }
-    .deals-text h3{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    }
     .deals-text p{
-    font-size: 1.3rem;
     margin-bottom: 5rem;
     padding: 0 1.5rem;
     }
     .contacts{
         margin-top: 2.75rem;
-         padding: 7rem 2.2rem;
-        /* width: 100%; */
+        padding: 7rem 2.2rem;
         background-size:cover;
     }
     
@@ -636,12 +607,10 @@ footer > .flex{
     }
     .contacts h2{
        font-size: 2rem; 
-       
     }
 
     footer > .flex{
-        flex-direction: column;
-        
+        flex-direction: column;   
         gap: 1.5rem;
     }
     footer > .container{
