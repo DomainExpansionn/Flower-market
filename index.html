@@ -6,6 +6,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -19,19 +20,19 @@
             <img src="assets/logo.png" alt="">
             <div class="nav-div flex">
                 <ul class="nav-list flex">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a class="bold" href="">Home</a></li>
+                    <li><a class="nav-color" href="">Shop</a></li>
+                    <li><a class="nav-color" href="">About Us</a></li>
                 </ul>
-                <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a>
+                <a class="cart bold" href=""><i class="fa-solid fa-cart-shopping cart-icon"></i>Cart ($56)</a>
             </div>
         </nav>
         <section class="banner grid">
             <div class="banner-description">
                 <h1 class="noto-font">
-                    ALWAYS <span>FRESH FLOWERS</span>
+                    ALWAYS <span class="primary-color">FRESH FLOWERS</span>
                 </h1>
-                <p class="inter-font">
+                <p class="inter-font description-color">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
                 </p>
             </div>
@@ -41,11 +42,11 @@
     <main>
         <section class="plants container text-center">
             <div class="our-plants">
-                <h3><span>Our</span> Plants</h3>
-                <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                <h3 class="noto-font"><span class="primary-color">Our</span> Plants</h3>
+                <p class="inter-font description-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
             <div class="plant-card grid">
-                <div class="card">
+                <div class="card inter-font">
                     <img src="assets/sample-flower-image.png" alt="">
                     <p>Lily Blossom</p>
                     <h6>20 USD</h6>
@@ -95,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section class="seller-info container">
+        <section class="seller-info  container">
             <div class="seller flex">
                 <div class="seller-images">
                     <img class="flower-store" src="assets/flower-store.png" alt="">
@@ -103,8 +104,8 @@
                     <img class="trusted-badge" src="assets/trusted-badge.png" alt="">
                 </div>
                 <div class="seller-details">
-                    <h3>Flower & Plants Lover</h3>
-                    <ul>
+                    <h3 class="noto-font">Flower & Plants Lover</h3>
+                    <ul class="inter-font description-color">
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -115,13 +116,80 @@
         </section>
         <section class="deals text-center container">
             <div class="deals-text">
-                <h3><span>Latest Deals</span></h3>
-                <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                <h3 class="noto-font"><span class="primary-color">Latest </span>Deals</h3>
+                <p class="inter-font description-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-            <div class="deal-imgs grid">
+            <div class="deal-imgs">
+                <div class="bloom">
+                     <div class="overlay"></div>
+                    <img src="assets/deal-bloom.png" alt="">
+                    <div class="discount">
+                        <h4 class="noto-font">60% Off | Bloom Plant </h4>
+                        <a class="inter-font" href="">Shop Now</a>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="zabo">
+                    <div class="overlay"></div>
+                    <div class="discount">
+                        <h4 class="noto-font" >60% Off | Bloom Plant </h4>
+                        <a class="inter-font" href="">Shop Now</a>
+                    </div>
+                    <img src="assets/deal-zabo.png" alt="">
+                </div>
+                <div class="ana">
+                     <div class="overlay"></div>
+                    <div class="discount">
+                        <h4 class="noto-font" >60% Off | Bloom Plant </h4>
+                        <a class="inter-font" href="">Shop Now</a>
+                    </div>
+                    <img src="assets/deal-ana.png" alt="">
+                </div>
                 
             </div>
         </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="noto-font text-center">Join the colorful Bunch</h2>
+                <div class="contact-mail flex inter-font">
+                <input type="email" id="email" name="email" placeholder="Write email" />
+                <button class="btn-primary">Subscribe</button>
+            </div>
+            </div>
+            
+        </section>
     </main>
+    <footer>
+        <div class="footer flex container inter-font">
+            <div class="footer-description">
+                <img src="assets/logo.png" alt="">
+                <p class="description-color">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. 
+                </p>
+            </div>
+            <ul class="list-1 flex">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <ul class="list-1 flex">
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Help Center</a></li>
+            </ul>
+            <div class="icons flex">
+                <img src="assets/icon-linkedin.png" alt="">
+                <img src="assets/icon-twitter.png" alt="">
+                <img src="assets/icon-facebook.png" alt="">
+                <img src="assets/icon-youtube.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
